@@ -18,10 +18,8 @@ mycursor = mydb.cursor()
 
 # sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
 # val1 = ("Peter", "4293 Southampton Drive") 
-# val2 = ("Amy", "1234 Main Street")
 
 # mycursor.execute(sql, val1) 
-# mycursor.execute(sql, val2) 
 
 # mydb.commit() 
 
@@ -31,7 +29,7 @@ mycursor = mydb.cursor()
 # Insert Multiple Rows 
 # To insert multiple rows into a table, use the executemany() method.
 
-"""
+
 sql = "INSERT INTO customers (name, address) VALUES (%s, %s)" 
 val = [
     ('John', 'Highway 21'),
@@ -55,7 +53,7 @@ mycursor.executemany(sql, val)
 mydb.commit()
 
 print(mycursor.rowcount, "was inserted.")
-"""
+
 
 # Get Inserted ID
 # You can get the id of the row you just inserted by asking the cursor object. 

@@ -14,7 +14,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-# mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
+mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
 
 # Primary Key 
 # When creating a table, you should also create a column with a unique key for each record.
